@@ -4,7 +4,7 @@ platform :ios, '9.0'
 
 target 'TPUIKit-Swift_Example' do
   pod 'TPUIKit-Swift', :path => '../'
-
+  pod 'SnapKit'
   target 'TPUIKit-Swift_Tests' do
     inherit! :search_paths
 

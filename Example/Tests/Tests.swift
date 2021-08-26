@@ -1,5 +1,4 @@
 import XCTest
-import TPUIKit-Swift
 
 class Tests: XCTestCase {
     

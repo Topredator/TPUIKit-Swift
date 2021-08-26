@@ -1,0 +1,6 @@
+framework module TPUIKit_Swift {
+  umbrella header "TPUIKit-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

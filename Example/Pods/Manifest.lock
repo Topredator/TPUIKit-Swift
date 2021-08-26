@@ -1,0 +1,90 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.2)
+  - SnapKit (4.2.0)
+  - TPFoundation-Swift (1.0.0)
+  - TPUIKit-Swift (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Alert (= 1.0.0)
+    - TPUIKit-Swift/Banner (= 1.0.0)
+    - TPUIKit-Swift/Base (= 1.0.0)
+    - TPUIKit-Swift/Blank (= 1.0.0)
+    - TPUIKit-Swift/MarginLabel (= 1.0.0)
+    - TPUIKit-Swift/Menu (= 1.0.0)
+    - TPUIKit-Swift/Navigator (= 1.0.0)
+    - TPUIKit-Swift/PageControl (= 1.0.0)
+    - TPUIKit-Swift/Refresh (= 1.0.0)
+    - TPUIKit-Swift/SimBtn (= 1.0.0)
+    - TPUIKit-Swift/Tabbar (= 1.0.0)
+    - TPUIKit-Swift/Toast (= 1.0.0)
+  - TPUIKit-Swift/Alert (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Banner (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/PageControl
+  - TPUIKit-Swift/Base (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Blank (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Base
+  - TPUIKit-Swift/MarginLabel (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Menu (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Base
+  - TPUIKit-Swift/Navigator (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/PageControl (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Refresh (1.0.0):
+    - MJRefresh
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Base
+  - TPUIKit-Swift/SimBtn (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Tabbar (1.0.0):
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Base
+  - TPUIKit-Swift/Toast (1.0.0):
+    - MBProgressHUD
+    - SnapKit
+    - TPFoundation-Swift
+    - TPUIKit-Swift/Base
+
+DEPENDENCIES:
+  - SnapKit
+  - TPUIKit-Swift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - MJRefresh
+    - SnapKit
+    - TPFoundation-Swift
+
+EXTERNAL SOURCES:
+  TPUIKit-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TPFoundation-Swift: b1be14c16eff9220f9066b410fdbdec5c1a4a6a1
+  TPUIKit-Swift: 4b2e4827331afc1d279c7c0bd2c49f0e6de2abd5
+
+PODFILE CHECKSUM: 569300a7cab1aa17be6c40dd11633b42e6b44444
+
+COCOAPODS: 1.10.1
