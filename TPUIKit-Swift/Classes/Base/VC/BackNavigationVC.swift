@@ -23,8 +23,8 @@ open class BackNavigationVC: BaseNavigationController {
     }
 }
 
-public extension UIViewController {
-    @objc func backAction() { navigationController?.popViewController(animated: true) }
+extension UIViewController {
+    @objc open func backAction() { navigationController?.popViewController(animated: true) }
 }
 public extension UINavigationBar {
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {

@@ -16,7 +16,7 @@ open class XTNavigationItem {
     /// 隐藏navigationbar
     private var _navigaitonBarHidden: Bool = false
     public var navigaitonBarHidden: Bool {
-        set { set(navigaitonBar: newValue, animated: false) }
+        set { config(navigaitonBar: newValue, animated: false) }
         get { _navigaitonBarHidden }
     }
     /// 禁用 右滑返回
@@ -27,7 +27,7 @@ open class XTNavigationItem {
         self.navigaitonBarHidden = hidden
         self.disableInteractivePopGestureRecognizer = disablePop
     }
-    public func set(navigaitonBar hidden: Bool, animated: Bool) {
+    public func config(navigaitonBar hidden: Bool, animated: Bool) {
         _navigaitonBarHidden = hidden
         updateNavigaitonBarHidden(animated)
     }
@@ -44,15 +44,15 @@ open class XTNavigationItem {
 
 // MARK:  ------------- UIViewController 前缀扩展 --------------------
 private struct AssociatedKeys {
-    static let navigationItemKey = "xtuikit.base.navigationItem.key"
+    static var navigationItemKey: String = "xtuikit.base.navigationItem.key"
 }
 extension NameSpace where Base: UIViewController {
     public var navigationItem: XTNavigationItem {
         get {
-            var xt_navigationItem = objc_getAssociatedObject(base, AssociatedKeys.navigationItemKey) as? XTNavigationItem
+            var xt_navigationItem = objc_getAssociatedObject(base, &AssociatedKeys.navigationItemKey) as? XTNavigationItem
             if xt_navigationItem == nil {
                 xt_navigationItem = XTNavigationItem(navigationBar: false)
-                objc_setAssociatedObject(base, AssociatedKeys.navigationItemKey, xt_navigationItem, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                objc_setAssociatedObject(base, &AssociatedKeys.navigationItemKey, xt_navigationItem, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
             return xt_navigationItem!
         }
