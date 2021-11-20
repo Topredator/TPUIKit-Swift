@@ -13,7 +13,7 @@ open class BaseViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.tp.rgbt(245)
+        self.view.backgroundColor = .white
     }
     public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait

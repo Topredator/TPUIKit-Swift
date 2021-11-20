@@ -93,6 +93,10 @@ TODO: Add long description of the pod here.
       ss.dependency 'TPUIKit-Swift/Base'
   end
   
+  s.subspec 'BackgroundLineView' do |ss|
+      ss.source_files = 'TPUIKit-Swift/Classes/BackgroundLineView/**/*'
+  end
+  
   s.dependency 'SnapKit'
   s.dependency 'TPFoundation-Swift'
   

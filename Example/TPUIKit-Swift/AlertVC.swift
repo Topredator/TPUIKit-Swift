@@ -14,7 +14,6 @@ class AlertVC: BaseViewController {
         super.viewDidLoad()
         title = "Alert"
         setupSubviews()
-        tp.navigationItem.navigaitonBarHidden = true
     }
     func setupSubviews() {
         // alert

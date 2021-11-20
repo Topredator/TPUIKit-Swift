@@ -9,7 +9,7 @@ import Foundation
 import TPFoundation_Swift
 
 /// 列表 基类(自带 tableView)
-open class BaseTableViewVC: UIViewController {
+open class BaseTableViewVC: BaseViewController {
     open lazy var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.separatorStyle = .none
@@ -20,6 +20,7 @@ open class BaseTableViewVC: UIViewController {
     }()
     
     open override func viewDidLoad() {
+        super.viewDidLoad()
         setupTableView()
     }
     // MARK:  ------------- Public method --------------------
