@@ -34,5 +34,5 @@ open class BannerPageView: UIView {
         self.reuseIdentifier = reuseIdentifier
         self.addGestureRecognizer(self.tapGR)
     }
-    public func preparedForReuse() {}
+    open func preparedForReuse() {}
 }
