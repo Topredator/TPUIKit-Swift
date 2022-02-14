@@ -1,6 +1,6 @@
 {
   "name": "TPUIKit-Swift",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "Swift版 UI组件库.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Topredator/TPUIKit-Swift",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/Topredator/TPUIKit-Swift.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "swift_versions": "5.0",
   "source_files": "TPUIKit-Swift/Classes/**/*",
@@ -117,6 +117,10 @@
 
         ]
       }
+    },
+    {
+      "name": "BackgroundLineView",
+      "source_files": "TPUIKit-Swift/Classes/BackgroundLineView/**/*"
     }
   ],
   "swift_version": "5.0"

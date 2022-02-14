@@ -7,6 +7,13 @@
 
 import UIKit
 
+
+@objc public extension UIView {
+    @objc func tp_removeAllSubviews() {
+        self.tp.removeAllSubviews()
+    }
+}
+
 open class BaseTableViewCell: UITableViewCell {
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
